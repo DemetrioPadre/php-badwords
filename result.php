@@ -1,6 +1,7 @@
 <?php
  $greeting= "ciao padrone"; 
- $congratulations="ora finalmente sei un front-ender, e adesso puoi iniziare la seconda parte del corso che hai pagato 5 maledettissimi K"
+ $congratulations="sono qua per servirti";
+ $fullpower= $greeting .$congratulations
  ?>
 
 
@@ -12,8 +13,7 @@
     <title><?php echo "primo esercizio in php" ?></title>
 </head>
 <body>
-    <h1><?php echo $greeting ?></h1>
-
-    <h2><?php echo $congratulations?></h2>
+    <h1> <?php echo $fullpower?></h1>
+  
 </body>
 </html>
