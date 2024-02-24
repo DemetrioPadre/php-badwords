@@ -2,8 +2,9 @@
 <?php
 $user_text= $_GET['name'];
 $bad_word= $_GET['bad_word'];
-// $bad_word_lenght = strlen($bad_word);
-$new_bad_word = str_replace($bad_word,'***', $bad_word );
+$bad_word_length= strlen($bad_word);
+$bad_word_m = str_repeat('*', $bad_word_length);
+$new_bad_word = str_replace($bad_word, $bad_word_m , $bad_word);
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ $new_bad_word = str_replace($bad_word,'***', $bad_word );
         <h3>vorrei censurare la parola  : " <?php echo $bad_word ?> " , che ha <?php echo strlen($bad_word) ?> caratteri,  sarebbe possibile?</h3>
 <h4> 
     Ecco la tua parola censurata : "
-    <?php echo $new_bad_word  ?> " , che ha <?php echo strlen($bad_word)?> caratteri </h4>
+    <?php echo $new_bad_word  ?> " , che ha <?php echo strlen($bad_word)?> asterischi </h4>
     
 
 
