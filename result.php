@@ -2,8 +2,7 @@
 <?php
 $user_text= $_GET['name'];
 $bad_word= $_GET['bad_word'];
-$bad_word_length= strlen($bad_word);
-$bad_word_m = str_repeat('*', $bad_word_length);
+$bad_word_m = str_repeat('*',strlen($bad_word) );
 $new_bad_word = str_replace($bad_word, $bad_word_m , $bad_word);
 ?>
 
