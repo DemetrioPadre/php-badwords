@@ -19,13 +19,13 @@ include_once("./init.php")
     "
     </h1>
 
-<h2> la tua parola è lunga:  <?php echo strlen($user_text)?> caratteri </h2>
+<h2> la tua frase è lunga:  <?php echo strlen($user_text)?> caratteri </h2>
 </div>
     
     <div class="badWord">
         <h3>vorrei censurare la parola  : " <?php echo $bad_word ?> " , che ha <?php echo strlen($bad_word) ?> caratteri,  sarebbe possibile?</h3>
 <h4> 
-    Ecco la tua parola censurata : "
+    Ecco la tua nuova frase con parola censurata : "
     <?php echo $new_bad_word  ?> " , che ha <?php echo strlen($bad_word)?> asterischi </h4>
     
 
